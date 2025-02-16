@@ -148,7 +148,7 @@ SELECT Branch, category, total_profit
 FROM category_profit
 WHERE rnk = 1;
 
--- Q12: Find the month with the highest sales for each branch
+-- Q11: Find the month with the highest sales for each branch
 
 WITH monthly_sales AS (
     SELECT 
@@ -163,7 +163,7 @@ SELECT Branch, month, total_revenue
 FROM monthly_sales
 WHERE rnk = 1;
 
--- Q13: Analyze customer shopping behavior - Find the average basket size per branch
+-- Q12: Analyze customer shopping behavior - Find the average basket size per branch
 
 SELECT 
     Branch, 
